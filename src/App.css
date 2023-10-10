@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'poppins';
+  src: url('./styled/fonts/Poppins-Black.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PressStart2P';
+  src: url('./styled/fonts/PressStart2P-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .App {
   text-align: center;
 }
