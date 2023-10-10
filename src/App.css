@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Inter';
+  src: url('./styled/fonts/Inter-VariableFont_slnt,wght.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .App {
   text-align: center;
 }
