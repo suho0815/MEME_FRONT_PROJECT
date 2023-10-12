@@ -11,7 +11,7 @@ export const StyledButton = styled.button`
   font-size: 1rem;
   line-height: 1.5;
   border: 1px solid lightgray;
-
+  cursor: pointer;
   color: ${props => props.color || 'gray'};
   background: ${props => props.background || 'white'};
 `
