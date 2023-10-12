@@ -4,7 +4,9 @@ import {StyledDiv, StyledButton} from '../../styled'
 export const MainPage = () => {
   return (
     <main>
-      <StyledDiv>helloss</StyledDiv>
+      <StyledDiv font="RedRose" bold="300">
+        테스트
+      </StyledDiv>
       <StyledButton color="white" background="#7929FF">
         hihi
       </StyledButton>

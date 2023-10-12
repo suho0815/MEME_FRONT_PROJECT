@@ -18,9 +18,10 @@ export const StyledButton = styled.button`
 
 /**
  * @param font: font 이름 ex) font="RedRose", font="Inter", font="PressStart2P", font="poppins"
+ * @param bold: bold
  */
 export const StyledDiv = styled.div`
   font-size: ${theme.fontSize.lg};
   font-family: ${props => props.font};
-  font-weight: bold;
+  font-weight: ${props => props.bold || 'bold'};
 `
