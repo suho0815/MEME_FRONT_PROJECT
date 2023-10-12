@@ -11,7 +11,11 @@ const fontSize = {
   sm: '0.75rem',
   base: '1rem',
   md: '1.25rem',
-  lg: '1.5rem'
+  lg: '1.5rem',
+  xl: '1.75rem',
+  xl2: '2.0rem',
+  xl3: '2.25rem',
+  xl4: '2.5rem'
 }
 
 const lightversion = {

@@ -6,7 +6,7 @@ import {Icon} from './Icon'
  * @param open: boolean형태로 true이면 modal창 열고, false값이면 modal창 닫음
  * @param closeModal: open 상태값을 관리하는 함수
  */
-export const Modal = ({open, closeModal, children}) => {
+export const Modal = ({open, closeModal, isCloseIcon, children}) => {
   const handleModalClose = () => {
     closeModal(false)
   }
@@ -14,9 +14,11 @@ export const Modal = ({open, closeModal, children}) => {
   return (
     <ModalBackdrop open={open}>
       <ModalContent width="30%" height="20%">
-        <ModalExit onClick={handleModalClose}>
-          <Icon name="close" />{' '}
-        </ModalExit>
+        {isCloseIcon && (
+          <ModalExit onClick={handleModalClose}>
+            <Icon name="close" />{' '}
+          </ModalExit>
+        )}
         {children}
       </ModalContent>
     </ModalBackdrop>
