@@ -22,14 +22,14 @@
 @font-face {
   font-family: 'RedRose';
   src: url('./styled/fonts/RedRose-Bold.woff') format('woff');
-  font-weight: normal;
+  font-weight: Bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'RedRose';
   src: url('./styled/fonts/RedRose-Light.woff') format('woff');
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -43,13 +43,13 @@
 @font-face {
   font-family: 'RedRose';
   src: url('./styled/fonts/RedRose-Medium.woff') format('woff');
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'RedRose';
   src: url('./styled/fonts/RedRose-SemiBold.woff') format('woff');
-  font-weight: normal;
+  font-weight: SemiBold;
   font-style: normal;
 }

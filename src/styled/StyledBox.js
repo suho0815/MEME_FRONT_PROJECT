@@ -16,4 +16,6 @@ export const StyledDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: ${props => props.width};
+  height: ${props => props.height};
 `
