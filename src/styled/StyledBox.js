@@ -10,3 +10,10 @@ export const StyledSection = styled.section`
   width: ${props => props.width || '100vw'};
   height: ${props => props.height || '100vh'};
 `
+
+/** 중앙 정렬된 div */
+export const StyledDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
