@@ -1,52 +1,37 @@
 /** 게시글 상세보기 페이지 */
-import {
-  StyledTitle,
-  StyledSection,
-  StyledButton,
-  NavBoxTest,
-  BoardFrame,
-  BoardTitleFrame,
-  BoardTitle,
-  BoardContentFrame,
-  Title,
-  SubTitle
-} from '../../../styled'
-import {Icon} from '../../../components'
-import theme from '../../../styled/theme'
+import {StyledTitle, StyledSection, StyledButton, NavBoxTest, BoardbtnDiv} from '../../../styled'
+import {BoardContent} from './BoardContent'
+import {BoardComment} from './BoardComment'
+import {useNavigate} from 'react-router-dom'
 
 export const DetailCommunity_Board = () => {
+  const Navigate = useNavigate()
+
+  const BoardListOnClicked = () => {
+    Navigate('/community')
+  }
+
+  const BoardDeclarationOnClicked = () => {
+    Navigate('/community/declaration')
+  }
+
   return (
     <StyledSection>
       <NavBoxTest></NavBoxTest>
-      <StyledTitle font="RedRose">Community</StyledTitle>
-      <BoardFrame>
-        <BoardTitleFrame>
-          <BoardTitle>
-            <Title textSize={theme.fontSize.xl} font="poppins" paddingLeft="25px">
-              title
-            </Title>
-            <SubTitle textSize={theme.fontSize.md} font="poppins" paddingRight="25px">
-              2023-10-11
-            </SubTitle>
-          </BoardTitle>
-          <BoardTitle>
-            <SubTitle
-              textSize={theme.fontSize.base}
-              font="poppins"
-              paddingLeft="25px"
-              style={{display: 'flex', alignItems: 'center'}}>
-              <Icon name="person" />
-              작성자
-            </SubTitle>
-            <SubTitle textSize={theme.fontSize.base} font="poppins" paddingRight="25px">
-              조회수: ?
-            </SubTitle>
-          </BoardTitle>
-        </BoardTitleFrame>
-        <BoardContentFrame>
-          <div>내용입니다.</div>
-        </BoardContentFrame>
-      </BoardFrame>
+      <StyledTitle font="RedRose" bold="bold">
+        Community
+      </StyledTitle>
+      {/* 게시글 내용 */}
+      <BoardContent />
+      {/* 신고, 목록 버튼 */}
+      <BoardbtnDiv>
+        <StyledButton onClick={BoardDeclarationOnClicked} style={{marginRight: '30px'}}>
+          신고하기
+        </StyledButton>
+        <StyledButton onClick={BoardListOnClicked}>목록</StyledButton>
+      </BoardbtnDiv>
+      {/* 댓글 */}
+      <BoardComment />
     </StyledSection>
   )
 }
