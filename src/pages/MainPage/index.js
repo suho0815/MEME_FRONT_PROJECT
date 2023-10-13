@@ -14,7 +14,7 @@ export const MainPage = () => {
       <StyledButton color="white" background="#7929FF">
         hihi
       </StyledButton>
-      <Modal open={open} closeModal={setOpen} isCloseIcon={true}>
+      <Modal open={open} closeModal={setOpen} isCloseIcon={true} width="40%" height="40%">
         <div>모달 테스트입니다.</div>
       </Modal>
     </main>
