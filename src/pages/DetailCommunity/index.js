@@ -1,5 +1,5 @@
 /** 커뮤니티 게시판 */
-import {StyledTitle, StyledSection, StyledButton, NavBoxTest} from '../../styled'
+import {StyledTitle, StyledSection, StyledButton, NavBoxTest, Total} from '../../styled'
 import {BoardList} from './BoardList'
 import * as D from '../../dummydata'
 
@@ -8,8 +8,15 @@ export const DetailCommunity = () => {
     <StyledSection>
       <NavBoxTest></NavBoxTest>
       <StyledTitle font="RedRose">Community</StyledTitle>
-      <div>Total : -</div>
-      <div>
+      <Total>
+        Total : -
+        <StyledButton color="white" background="#7929FF" style={{position: 'absolute', right: '0px', bottom: '11px'}}>
+          post
+        </StyledButton>
+      </Total>
+
+      <div style={{marginBottom: '55px'}}>
+        {/* 공지사항 */}
         <BoardList
           title={D.randomTitleText()}
           write={D.randomName()}
@@ -19,6 +26,7 @@ export const DetailCommunity = () => {
         />
       </div>
       <div>
+        {/* 자유 게시글 */}
         <BoardList
           id={1}
           title={D.randomTitleText()}
@@ -28,6 +36,7 @@ export const DetailCommunity = () => {
           view={1}
         />
       </div>
+      {/* 페이지네이션 */}
     </StyledSection>
   )
 }

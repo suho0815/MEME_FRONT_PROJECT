@@ -1,5 +1,5 @@
 import {Icon} from '../../components'
-import {BoardLists, BoardListsDiv, Title} from '../../styled'
+import {BoardLists, BoardListsDiv} from '../../styled'
 
 export const BoardList = ({id, title, write, date, heart, view}) => {
   return (
