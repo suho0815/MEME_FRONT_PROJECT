@@ -1,3 +1,4 @@
+import './App.css'
 import {RouteSetup} from './routes/RouteSetup'
 import {CookiesProvider} from 'react-cookie'
 import {Provider as ReduxProvider} from 'react-redux'
