@@ -43,18 +43,22 @@ export const BoardFrame = styled.div`
   width: 90%;
 `
 
+// 게시글 제목 세부 틀 (+ 댓글 List 세부 틀)
 export const BoardTitleFrame = styled.div`
   display: flex;
   flex-direction: column;
   border-top: 1px solid #bb99cd;
   border-bottom: 1px solid #bb99cd;
   background-color: white;
+  margin: auto;
+  width: ${props => props.width};
 `
 export const BoardTitle = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  padding-bottom: 15px;
 `
 
 export const BoardContentFrame = styled.div`
@@ -67,7 +71,7 @@ export const BoardContentFrame = styled.div`
 // 신고, 목록 버튼을 감싸는 Div
 export const BoardbtnDiv = styled.div`
   display: flex;
-  justify-content: end;
+  justify-content: ${props => props.justifyContent || 'end'};
   align-items: center;
   padding: 50px;
   width: 100%;
@@ -84,11 +88,27 @@ export const CommentInputDiv = styled.div`
   margin: auto;
   background-color: white;
 `
+// 댓글 등록 버튼 (+ 게시글 작성 input)
 export const CommentInput = styled.input`
-  width: 60%;
-  height: 50px;
+  width: ${props => props.width || '60%'};
+  height: ${props => props.height || '50px'};
   border-radius: 5px;
   border: 1px solid #bb99cd;
-  background-color: #f5f5f5;
+  background-color: ${props => props.background || '#f5f5f5'};
   padding: 10px;
+  font-family: ${props => props.font || 'poppins'};
+  font-size: ${props => props.textSize};
+`
+
+// 게시글 작성 관련 style
+export const BoardContentWrite = styled.textarea`
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  border: 1px solid #bb99cd;
+  background-color: ${props => props.background || '#f5f5f5'};
+  padding: 10px;
+  resize: none;
+  font-family: ${props => props.font || 'poppins'};
+  font-size: ${props => props.textSize};
 `

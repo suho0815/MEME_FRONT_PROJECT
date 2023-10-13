@@ -11,11 +11,12 @@ export const StyledSection = styled.section`
   height: ${props => props.height || '100vh'};
 `
 
-/** 중앙 정렬된 div */
+/** 중앙 정렬 선택 div */
 export const StyledDiv = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: ${props => props.justifyContent || 'center'};
+  align-items: ${props => props.alignItems || 'center'};
+  margin: auto;
   width: ${props => props.width};
   height: ${props => props.height};
 `

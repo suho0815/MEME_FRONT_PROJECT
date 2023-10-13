@@ -1,20 +1,20 @@
 @font-face {
   font-family: 'poppins';
-  src: url('./styled/fonts/Poppins-Black.woff') format('truetype');
+  src: url('./styled/fonts/Poppins-Black.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PressStart2P';
-  src: url('./styled/fonts/PressStart2P-Regular.woff') format('truetype');
+  src: url('./styled/fonts/PressStart2P-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url('./styled/fonts/Inter-VariableFont_slnt,wght.woff') format('truetype');
+  src: url('./styled/fonts/Inter-VariableFont_slnt,wght.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
