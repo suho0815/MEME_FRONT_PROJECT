@@ -16,6 +16,8 @@ export const Title = styled.div`
   color: ${props => props.color};
   width: ${props => props.width};
   height: ${props => props.height};
+  padding-left: ${props => props.paddingLeft};
+  padding-right: ${props => props.paddingRight};
 `
 /**
  * @param textSize: 폰트 크기 지정
@@ -32,6 +34,8 @@ export const SubTitle = styled.div`
   color: ${props => props.color};
   width: ${props => props.width};
   height: ${props => props.height};
+  padding-left: ${props => props.paddingLeft};
+  padding-right: ${props => props.paddingRight};
 `
 
 /** Nav바 자리 임의로 box만 둘려고 만듬 */
