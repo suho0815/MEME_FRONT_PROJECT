@@ -16,6 +16,8 @@ export const Title = styled.div`
   color: ${props => props.color};
   width: ${props => props.width};
   height: ${props => props.height};
+  margin: ${props => props.margin};
+  padding: ${props => props.padding};
   padding-left: ${props => props.paddingLeft};
   padding-right: ${props => props.paddingRight};
 `

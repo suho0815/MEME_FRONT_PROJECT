@@ -71,7 +71,7 @@ export const BoardContentFrame = styled.div`
 // 신고, 목록 버튼을 감싸는 Div
 export const BoardbtnDiv = styled.div`
   display: flex;
-  justify-content: ${props => props.justifyContent || 'end'};
+  justify-content: ${props => props.justifycontents || 'end'};
   align-items: center;
   padding: 50px;
   width: 100%;
@@ -111,4 +111,20 @@ export const BoardContentWrite = styled.textarea`
   resize: none;
   font-family: ${props => props.font || 'poppins'};
   font-size: ${props => props.textSize};
+`
+
+export const ImgInputlabel = styled.label`
+  padding: 8px 12px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: poppins;
+  max-width: 200px;
+  max-height: 100px;
+  color: white;
+  background-color: #7929ff;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
