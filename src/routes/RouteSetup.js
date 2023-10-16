@@ -9,6 +9,9 @@ import {DetailCommunity} from '../pages/DetailCommunity'
 import {DetailCommunity_write} from '../pages/DetailCommunity/DetailCommunity_write'
 import {Community_Declaration} from '../pages/DetailCommunity/Community_Declaration'
 import {DetailCommunity_Board} from '../pages/DetailCommunity/DetailCommunity_Board'
+import {MemberListPage} from '../pages/Manager'
+import {MyPage} from '../pages/Member'
+import {MemberListView} from '../pages/Member/MemberListView'
 
 export const RouteSetup = () => {
   return (
@@ -22,6 +25,9 @@ export const RouteSetup = () => {
           <Route path="/community/write" element={<DetailCommunity_write />} />
           <Route path="/community/declaration" element={<Community_Declaration />} />
           <Route path="/community/:boardId" element={<DetailCommunity_Board />} />
+          <Route path="/manager" element={<MemberListPage />} />
+          <Route path="/mypage" element={<MyPage />} />
+          <Route path="/mypage/myboard" element={<MemberListView />} />
         </Route>
         <Route path="*" element={<NoMatch />} />
         <Route path="/signup" element={<SignUp />} />
