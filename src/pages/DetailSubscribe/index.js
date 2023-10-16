@@ -1,9 +1,5 @@
 /** 구독 페이지 */
-<<<<<<< HEAD
 import React from 'react';
-=======
-import React, { version } from 'react';
->>>>>>> d089badfa7d1247369ed905278aa9bde279313c6
 import { DetailSubscribe_Box } from './DetailSubscribe_Box'
 import { SubscribeDiv, SubscribeTitle } from '../../styled/page'
 export const DetailSubscribe = () => {
