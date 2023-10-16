@@ -1,31 +1,36 @@
 import React from 'react'
-// import { DetailSubscribe_BT as BT } from './DetailSubscribe_BT'
+import { DetailSubscribe_BT as BT } from './DetailSubscribe_BT'
 import { DetailSubscribe_version as Version } from './DetailSubscribe_version'
-import { SubscribeDiv, VersionDiv, SubscribeBT, PriceDiv, Price } from '../../../styled/page'
+import { SubscribeBox, VersionDiv, PriceDiv, Price, Month, Discount, BtDiv } from '../../../styled/page'
 
-export const DetailSubscribe_Box = ({ version, price, month, discount, list }) => {
+export const DetailSubscribe_Box = ({ version, price, month, discount, list, bt }) => {
 
     return (
-        <SubscribeDiv>
-            <div>
+        <SubscribeBox>
                 <VersionDiv>
                     <Version version={version} />
                 </VersionDiv>
-            </div>
+                <Discount>
+                    {discount}
+                </Discount>
             <PriceDiv>
                 <Price>
                     {price}
                 </Price>
-                {month}
-                {discount}
-
+                <Month>
+                    {month}
+                </Month>
             </PriceDiv>
-            {list}
-            <div>
-                <SubscribeBT>
-                    구독하기
-                </SubscribeBT>
-            </div>
-        </SubscribeDiv>
+            <ul>
+                {list.map(item => (
+                    <li key={item}>{item}</li>
+                ))}
+            </ul>
+            {bt && 
+            <BtDiv>
+                <BT />
+            </BtDiv>
+            }
+        </SubscribeBox>
     )
 }
