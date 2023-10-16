@@ -5,9 +5,8 @@ import { DetailSearch_Select as Select } from './DetailSearch_Select'
 export const DetailSearch_Input = () => {
   return (
     <>
-    <div>DetailSearch_Input</div>
-    <TXT />
     <Select />
+    <TXT />
     </>
   )
 }
