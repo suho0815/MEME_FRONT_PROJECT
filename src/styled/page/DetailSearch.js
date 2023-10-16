@@ -14,7 +14,8 @@ export const SearchInput = styled.input`
   width: 100%;
   padding: 8px;
   box-sizing: border-box;
-  border: 1px solid ${theme.borderColor}; /* 테마에서 색상 가져오기 */
+  border: 2px solid #BB99CD;
+  border-radius: 6px;
 `
 
 export const SearchButton = styled.button`
