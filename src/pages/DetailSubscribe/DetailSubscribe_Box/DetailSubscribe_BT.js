@@ -1,7 +1,8 @@
 import React from 'react'
+import { SubscribeBT } from '../../../styled/page'
 
 export const DetailSubscribe_BT = () => {
   return (
-    <div>구독하기</div>
+    <SubscribeBT>구독하기</SubscribeBT>
   )
 }
