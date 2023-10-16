@@ -2,8 +2,10 @@ import {Icon} from '../../components'
 import {BoardLists, BoardListsDiv} from '../../styled'
 
 export const BoardList = ({id, title, write, date, heart, view}) => {
+  const ListClicked = () => {}
+
   return (
-    <BoardLists>
+    <BoardLists onClick={ListClicked}>
       <BoardListsDiv width="10%" iscenter={true} style={id ? {} : {color: 'red'}}>
         {id ? id : '공지사항'}
       </BoardListsDiv>
