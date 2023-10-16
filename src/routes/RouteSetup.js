@@ -11,7 +11,7 @@ import {Community_Declaration} from '../pages/DetailCommunity/Community_Declarat
 import {DetailCommunity_Board} from '../pages/DetailCommunity/DetailCommunity_Board'
 import {MemberListPage} from '../pages/Manager'
 import {MyPage} from '../pages/Member'
-import {MemberListView} from '../pages/Member/MemberListView'
+import {MyPageBoardList} from '../pages/Member/MyPageBoardList'
 
 export const RouteSetup = () => {
   return (
@@ -27,7 +27,7 @@ export const RouteSetup = () => {
           <Route path="/community/:boardId" element={<DetailCommunity_Board />} />
           <Route path="/manager" element={<MemberListPage />} />
           <Route path="/mypage" element={<MyPage />} />
-          <Route path="/mypage/myboard" element={<MemberListView />} />
+          <Route path="/mypage/myboard" element={<MyPageBoardList />} />
         </Route>
         <Route path="*" element={<NoMatch />} />
         <Route path="/signup" element={<SignUp />} />
