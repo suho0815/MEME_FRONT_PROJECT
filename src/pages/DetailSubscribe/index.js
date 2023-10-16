@@ -1,5 +1,5 @@
 /** 구독 페이지 */
-import React, { version } from 'react';
+import React from 'react';
 import { DetailSubscribe_Box } from './DetailSubscribe_Box'
 import { SubscribeDiv, SubscribeTitle } from '../../styled/page'
 export const DetailSubscribe = () => {
