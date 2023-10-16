@@ -7,7 +7,7 @@ import theme from './theme'
  */
 export const StyledSection = styled.section`
   background-color: #f5edf7;
-  width: ${props => props.width || '100vw'};
+  width: ${props => props.width || '100%'};
   height: ${props => props.height || '100%'};
 `
 
