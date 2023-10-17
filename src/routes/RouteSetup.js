@@ -10,8 +10,8 @@ import {DetailCommunity_write} from '../pages/DetailCommunity/DetailCommunity_wr
 import {Community_Declaration} from '../pages/DetailCommunity/Community_Declaration'
 import {DetailCommunity_Board} from '../pages/DetailCommunity/DetailCommunity_Board'
 import {MemberListPage} from '../pages/Manager'
-import {MyPage} from '../pages/Member'
-import {MyPageBoardList} from '../pages/Member/MyPageBoardList'
+import {MyPage} from '../pages/Member/Mypage'
+import {MyPageBoardList} from '../pages/Member/MypageBoardListPage'
 
 export const RouteSetup = () => {
   return (

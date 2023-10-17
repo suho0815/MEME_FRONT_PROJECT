@@ -54,6 +54,7 @@ export const DetailCommunity_write = () => {
           <select style={{marginRight: '15px'}}>
             <Icon name="person" />
             <option>notice</option>
+            <option>free</option>
           </select>
           <CommentInput
             ref={titleRef}

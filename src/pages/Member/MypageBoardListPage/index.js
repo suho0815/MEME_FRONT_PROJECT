@@ -1,7 +1,7 @@
 /** 내가 등록한 게시글/댓글 보기 페이지(member회원) */
-import {StyledSection, NavBoxTest, StyledTitle, StyledDiv, SubTitle} from '../../styled'
-import {BoardList} from '../DetailCommunity/BoardList'
-import * as D from '../../dummydata'
+import {StyledSection, NavBoxTest, StyledTitle, StyledDiv, SubTitle} from '../../../styled'
+import {BoardList} from '../../DetailCommunity/BoardList'
+import * as D from '../../../dummydata'
 
 export const MyPageBoardList = ({myBoard}) => {
   return (

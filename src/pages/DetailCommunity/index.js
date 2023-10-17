@@ -33,6 +33,7 @@ export const DetailCommunity = () => {
       <div style={{marginBottom: '55px'}}>
         {/* 공지사항 */}
         <BoardList
+          noticeid={1}
           title={D.randomTitleText()}
           write={D.randomName()}
           date={D.randomRelativeDate()}
