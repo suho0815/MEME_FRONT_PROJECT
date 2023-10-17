@@ -12,23 +12,23 @@ export const BoardList = ({id, noticeid, title, write, date, heart, view, style}
 
   return (
     <BoardLists onClick={ListClicked} style={style}>
-      <BoardListsDiv width="10%" iscenter={true} style={id ? {} : {color: 'red'}}>
+      <BoardListsDiv width="10%" iscenter="center" style={id ? {} : {color: 'red'}}>
         {id ? id : '공지사항'}
       </BoardListsDiv>
       <BoardListsDiv width="60%" style={{paddingLeft: '10px'}}>
         {title}
       </BoardListsDiv>
-      <BoardListsDiv width="10%" iscenter={true}>
+      <BoardListsDiv width="10%" iscenter="center">
         {write}
       </BoardListsDiv>
-      <BoardListsDiv width="10%" iscenter={true}>
+      <BoardListsDiv width="10%" iscenter="center">
         {date}
       </BoardListsDiv>
-      <BoardListsDiv width="10%" iscenter={true}>
+      <BoardListsDiv width="10%" iscenter="center">
         <Icon name="favorite" style={{color: 'red'}} />
         {heart}
       </BoardListsDiv>
-      <BoardListsDiv width="10%" iscenter={true}>
+      <BoardListsDiv width="10%" iscenter="center">
         {view}
       </BoardListsDiv>
     </BoardLists>

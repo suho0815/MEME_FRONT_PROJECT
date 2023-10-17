@@ -32,7 +32,7 @@ export const BoardListsDiv = styled.div`
   width: ${props => props.width};
   height: 100%;
   display: flex;
-  justify-content: ${props => (props.iscenter ? 'center' : 'left')};
+  justify-content: ${props => (props.iscenter || 'left')};
   align-items: center;
 `
 
