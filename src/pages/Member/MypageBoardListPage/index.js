@@ -21,6 +21,7 @@ export const MyPageBoardList = ({myBoard}) => {
           view={1}
         />
       </StyledDiv>
+      {/* 페이지네이션 */}
     </StyledSection>
   )
 }
