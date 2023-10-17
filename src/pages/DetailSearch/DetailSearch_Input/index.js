@@ -6,7 +6,8 @@ import { InputDiv } from '../../../styled/page'
 export const DetailSearch_Input = () => {
   return (
     <InputDiv>
-      <Select select='Year' />
+      <Select select='Year' num='2023'/>
+      <Select select='Category' />
       <TXT />
     </InputDiv>
   )
