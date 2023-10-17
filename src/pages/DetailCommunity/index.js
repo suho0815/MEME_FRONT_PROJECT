@@ -2,9 +2,16 @@
 import {StyledTitle, StyledSection, StyledButton, NavBoxTest, Total} from '../../styled'
 import {BoardList} from './BoardList'
 import {useNavigate} from 'react-router-dom'
+import {useState} from 'react'
+import {Pagenation} from '../../components'
 import * as D from '../../dummydata'
 
 export const DetailCommunity = () => {
+  const [total, setTotal] = useState(50)
+  const [page, setPage] = useState(1)
+  const limit = 10
+  const offset = (page - 1) * limit
+
   const Navigate = useNavigate()
 
   // 글쓰기 페이지로 이동
@@ -16,7 +23,7 @@ export const DetailCommunity = () => {
   const BoardListCliked = () => {}
 
   return (
-    <StyledSection>
+    <StyledSection height="100vh">
       <NavBoxTest></NavBoxTest>
       <StyledTitle font="RedRose">Community</StyledTitle>
       <Total>
@@ -53,6 +60,7 @@ export const DetailCommunity = () => {
         />
       </div>
       {/* 페이지네이션 */}
+      <Pagenation total={total} limit={limit} page={page} setPage={setPage} />
     </StyledSection>
   )
 }
